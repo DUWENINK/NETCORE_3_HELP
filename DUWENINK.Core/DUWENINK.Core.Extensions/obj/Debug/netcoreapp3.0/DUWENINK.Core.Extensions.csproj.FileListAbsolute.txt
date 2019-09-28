@@ -1,0 +1,9 @@
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Extensions\bin\Debug\netcoreapp3.0\DUWENINK.Core.Extensions.deps.json
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Extensions\bin\Debug\netcoreapp3.0\DUWENINK.Core.Extensions.dll
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Extensions\bin\Debug\netcoreapp3.0\DUWENINK.Core.Extensions.pdb
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Extensions\obj\Debug\netcoreapp3.0\DUWENINK.Core.Extensions.csprojAssemblyReference.cache
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Extensions\obj\Debug\netcoreapp3.0\DUWENINK.Core.Extensions.csproj.CoreCompileInputs.cache
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Extensions\obj\Debug\netcoreapp3.0\DUWENINK.Core.Extensions.AssemblyInfoInputs.cache
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Extensions\obj\Debug\netcoreapp3.0\DUWENINK.Core.Extensions.AssemblyInfo.cs
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Extensions\obj\Debug\netcoreapp3.0\DUWENINK.Core.Extensions.dll
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Extensions\obj\Debug\netcoreapp3.0\DUWENINK.Core.Extensions.pdb

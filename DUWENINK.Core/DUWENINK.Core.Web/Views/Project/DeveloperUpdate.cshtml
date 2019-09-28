@@ -1,0 +1,205 @@
+﻿@using DUWENINK.Core.Models.System
+@using Microsoft.AspNetCore.Mvc.Rendering
+@model DUWENINK.Core.Models.Business.ProjectUpdateDto
+
+@{
+    ViewBag.Title = "更新项目";
+    Layout = "~/Views/Shared/_Layout_Content.cshtml";
+}
+
+<div class="wrapper wrapper-content animated fadeIn">
+
+    
+    <div class="ibox float-e-margins">
+        <div class="ibox-title">
+            <h5>更新项目</h5>
+            <div class="ibox-tools">
+                <a class="collapse-link">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="ibox-content">
+            @using (Html.BeginForm("DeveloperUpdate", "Project", FormMethod.Post, new { @class = "form-horizontal" }))
+            {
+                <div class="row">
+                    <div class="tabs-container">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a data-toggle="tab" href="#tab-1" title="本页由客服录入" aria-expanded="true"> 项目基本信息</a>
+                            </li>
+                            <li class="">
+                                <a data-toggle="tab" href="#tab-2" aria-expanded="false">开发者补充信息</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            
+                            <div id="tab-1" class="tab-pane active">
+                                <div class="panel-body">
+                                    <!--客户QQ 客服QQ QQ群-->
+                                    <div class="form-group">
+                                        <label class="col-sm-1 control-label">@Html.LabelFor(m => m.FromCustomQQ):</label>
+                                        <div class="col-sm-3">
+                                            @Html.TextBoxFor(m => m.FromCustomQQ, new { @class = "form-control", disabled = false })
+                                        </div>
+                                        <label class="col-sm-1 control-label">@Html.LabelFor(m => m.FromCustomServiceQQ):</label>
+                                        <div class="col-sm-3">
+                                            @Html.TextBoxFor(m => m.FromCustomServiceQQ, new { @class = "form-control", disabled = false })
+                                        </div>
+                                        <label class="col-sm-1 control-label">@Html.LabelFor(m => m.FromQQGroup):</label>
+                                        <div class="col-sm-3">
+                                            @Html.TextBoxFor(m => m.FromQQGroup, new { @class = "form-control", disabled = false })
+                                        </div>
+                                    </div>
+                                    <!--三方群 负责人 项目类型-->
+                                    <div class="form-group">
+                                        <label class="col-sm-1 control-label">@Html.LabelFor(m => m.ProjectQQGroup):</label>
+                                        <div class="col-sm-3">
+                                            @Html.TextBoxFor(m => m.ProjectQQGroup, new { @class = "form-control", disabled = false })
+                                        </div>
+
+                                        <label class="col-sm-1 control-label">@Html.LabelFor(m => m.ChargePersonId):</label>
+                                        <div class="col-sm-3">
+                                            <div class="input-group date">
+
+                                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                @Html.TextBoxFor(m => m.ChargePersonName, new { @class = "form-control", disabled = false })
+                                                @Html.HiddenFor(m => m.ChargePersonId)
+                                            </div>
+
+                                        </div>
+
+                                        <label class="col-sm-1 control-label">@Html.LabelFor(m => m.ProjectType):</label>
+                                        <div class="col-sm-3">
+                                            @Html.TextBoxFor(m => m.ProjectType, new { @class = "form-control", disabled = false })
+                                        </div>
+
+
+                                    </div>
+                                    <!--回款周期 约定金额 启动时间-->
+                                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.SettleIntervalStr):</label>
+                                    <div class="col-sm-3">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            @Html.TextBoxFor(m => m.SettleIntervalStr, new { @class = "form-control", disabled = false })
+                                            <span class="input-group-addon">后回款</span>
+                                        </div>
+                                    </div>
+
+                                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.ProjectStartTime):</label>
+                                    <div class="col-sm-3">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            @Html.TextBoxFor(m => m.ProjectStartTime, new { @class = "form-control", disabled = false })
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div id="tab-2" class="tab-pane">
+                                <div class="panel-body">
+                                    <strong>移动设备优先</strong>
+                                    <p>在 Bootstrap 2 中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在 Bootstrap 3 中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，Bootstrap 是移动设备优先的。针对移动设备的样式融合进了框架的每个角落，而不是增加一个额外的文件。</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                   
+                   
+
+                    <div class="form-group" id="data_1">
+                       
+
+
+                        <label class="col-sm-1 control-label">@Html.LabelFor(m => m.ProjectTitle):</label>
+                        <div class="col-sm-2">
+                            @Html.TextBoxFor(m => m.ProjectTitle, new { @class = "form-control" })
+                        </div>
+                       
+                       
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label">@Html.LabelFor(m => m.ProjectAgreementWorth):</label>
+                        <div class="col-sm-2">
+                            <div class="input-group">
+                                <span class="input-group-addon">￥</span>
+                                @Html.TextBoxFor(m => m.ProjectAgreementWorth, new { @class = "form-control", disabled = false })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label">@Html.LabelFor(m => m.Remarks):</label>
+                        <div class="col-sm-2">
+                            @Html.TextAreaFor(m => m.Remarks, new { @class = "form-control", rows = 3, placeholder = "备注" })
+                            @Html.ValidationMessageFor(m => m.Remarks)
+                        </div>
+
+                    </div>
+                    <hr />
+                    <div class="form-group">
+
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-3 col-sm-8">
+                            <button class="btn btn-info" type="submit">保存</button>
+                            <button class="btn btn-white" type="button" id="btnBack">返回</button>
+                        </div>
+                    </div>
+
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section styles
+    {
+    <link href="~/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+}
+
+@section scripts{
+    <environment names="Development">
+        <script src="~/js/jquery.validate.js"></script>
+        <script src="~/js/jquery.validate.unobtrusive.js"></script>
+        <script src="~/js/plugins/suggest/bootstrap-suggest.js"></script>
+        <script src="~/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+        <script src="~/js/base.js"></script>
+        <script src="~/js/page/project.js"></script>
+        <script src="~/js/plugins/cropper/cropper.min.js"></script>
+        @*<script src="~/js/page/form-advanced.js"></script>*@
+
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/project.min.js" asp-append-version="true"></script>
+    </environment>
+
+    <script>
+        $("#btnBack").bind("click",
+            function(e) {
+                XPage.GoTo(e.target, "@Url.Action("Index")");
+            });
+        $(function() {
+            $("#data_1 .input-group.date").datepicker({
+                todayBtn: "linked",
+                keyboardNavigation: !1,
+                forceParse: !1,
+                calendarWeeks: !0,
+                autoclose: !0
+            });
+
+        });
+
+    </script>
+}
+

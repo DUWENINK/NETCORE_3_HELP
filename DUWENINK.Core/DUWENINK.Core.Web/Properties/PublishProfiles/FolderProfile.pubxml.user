@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Administrator\source\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Web\bin\Release\netcoreapp2.2\publish\</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Connection_Job_SqlServer">
+      <Value>Data Source = ddns.duwen.ink,21417%3b Initial Catalog = dwk_job%3b User ID = dwk_job%3b Password = X9ZAIlfINC7iQF %3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="Connection_SqlServer">
+      <Value>Data Source = ddns.duwen.ink,21417%3b Initial Catalog = dwk%3b User ID = dwk%3b Password = NlYMffQwZdTGbv%3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

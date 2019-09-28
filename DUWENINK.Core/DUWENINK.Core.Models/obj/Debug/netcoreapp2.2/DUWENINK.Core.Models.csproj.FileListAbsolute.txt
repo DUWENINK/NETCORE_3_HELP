@@ -1,0 +1,12 @@
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Models\bin\Debug\netcoreapp2.2\DUWENINK.Core.Models.deps.json
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Models\bin\Debug\netcoreapp2.2\DUWENINK.Core.Models.dll
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Models\bin\Debug\netcoreapp2.2\DUWENINK.Core.Models.pdb
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Models\bin\Debug\netcoreapp2.2\DUWENINK.Core.Infrastructure.dll
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Models\bin\Debug\netcoreapp2.2\DUWENINK.Core.Infrastructure.pdb
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Models\obj\Debug\netcoreapp2.2\DUWENINK.Core.Models.csprojAssemblyReference.cache
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Models\obj\Debug\netcoreapp2.2\DUWENINK.Core.Models.csproj.CoreCompileInputs.cache
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Models\obj\Debug\netcoreapp2.2\DUWENINK.Core.Models.AssemblyInfoInputs.cache
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Models\obj\Debug\netcoreapp2.2\DUWENINK.Core.Models.AssemblyInfo.cs
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Models\obj\Debug\netcoreapp2.2\DUWENINK.Core.Models.csproj.CopyComplete
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Models\obj\Debug\netcoreapp2.2\DUWENINK.Core.Models.dll
+C:\Users\DUWENINK\Desktop\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Models\obj\Debug\netcoreapp2.2\DUWENINK.Core.Models.pdb

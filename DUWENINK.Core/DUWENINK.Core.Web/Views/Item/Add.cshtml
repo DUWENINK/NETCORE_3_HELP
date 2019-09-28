@@ -1,0 +1,97 @@
+﻿@model DUWENINK.Core.Models.System.ItemGroupDto
+
+@{
+    ViewBag.Title = "代码项添加";
+    Layout = "~/Views/Shared/_Layout_Content.cshtml";
+}
+@section styles
+{
+    <link href="~/css/plugins/switchery/switchery.css" rel="stylesheet">
+}
+<div class="wrapper wrapper-content">
+    @using (Html.BeginForm("Add", "Item", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        @*<div class="form-group">
+                <label class="col-sm-3 control-label">@Html.LabelFor(m => m.ParentItemGroupId)：</label>
+                <div class="col-sm-8">
+                    @Html.TextBoxFor(m => m.ParentItemGroupId, new { @class = "form-control disabled", disabled = "disabled" })
+                    @Html.HiddenFor(m => m.ParentItemGroupId)
+                </div>
+            </div>*@
+        <div class="form-group">
+            <label class="col-sm-3 control-label">@Html.LabelFor(m => m.ParentItemGroupText)：</label>
+            <div class="col-sm-8">
+                @Html.TextBoxFor(m => m.ParentItemGroupText, new { @class = "form-control disabled", disabled = "disabled" })
+                @Html.HiddenFor(m => m.ParentItemGroupId)
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">@Html.LabelFor(m => m.ItemGroupText)：</label>
+            <div class="col-sm-8">
+                @Html.TextBoxFor(m => m.ItemGroupText, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.ItemGroupText)
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">@Html.LabelFor(m => m.ItemGroupCode)：</label>
+            <div class="col-sm-8">
+                @Html.TextBoxFor(m => m.ItemGroupCode, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.ItemGroupCode)
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">@Html.LabelFor(m => m.Index)：</label>
+            <div class="col-sm-8">
+                @Html.TextBoxFor(m => m.Index, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Index)
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">@Html.LabelFor(m => m.MultipleSelect)：</label>
+            <div class="col-sm-8">
+                <div class="switch">
+                    <div class="onoffswitch">
+                        <input type="checkbox" class="onoffswitch-checkbox" id="MultipleSelect">
+                        @*@Html.CheckBoxFor(m => m.MultipleSelect, new { @class = "form-control", aligin = "left" })*@
+                        <label class="onoffswitch-label" for="example2">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">@Html.LabelFor(m => m.ItemGroupDescription)：</label>
+            <div class="col-sm-8">
+                @Html.TextAreaFor(m => m.ItemGroupDescription, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.ItemGroupDescription)
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-8">
+                <button class="btn btn-info" type="submit" id="btnSave">添加</button>
+                <button class="btn btn-white" type="button" id="btnBack" data-type="window">返回</button>
+            </div>
+        </div>
+    }
+</div>
+
+
+@section scripts{
+    <script src="~/js/plugins/switchery/switchery.js"></script>
+    <environment names="Development">
+        <script src="~/js/jquery.validate.js"></script>
+        <script src="~/js/jquery.validate.unobtrusive.js"></script>
+        <script src="~/js/base.js"></script>
+        <script src="~/js/page/DUWENINK.action.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/validate.min.js" asp-append-version="true"></script>
+        <script src="~/js/base.min.js" asp-append-version="true"></script>
+        <script src="~/js/page/DUWENINK.action.js" asp-append-version="true"></script>
+    </environment>
+}

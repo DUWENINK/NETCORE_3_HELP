@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "数据首页";
+    Layout = "~/Views/Shared/_Layout_Content.cshtml";
+}
+@section styles
+    {
+    <environment names="Development">
+        <link href="~/css/plugins/jqgrid/ui.jqgrid.css" rel="stylesheet" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/css/grid.min.css" asp-append-version="true" />
+    </environment>
+}
+
+<div class="wrapper wrapper-content">
+    <div class="ibox float-e-margins">
+        <div class="ibox-title">
+            <h5>收集数据</h5>
+            <div class="ibox-tools">
+                <a class="collapse-link">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+        <div class="ibox-content">
+            @*<div class="form-group">
+                <button id="btnAdd" type="button" class="btn btn-primary " onclick="addModel()"><i class="fa fa-check"></i>&nbsp;添加</button>
+                <button id="btnEdit" type="button" class="btn btn-info " onclick="editModel()"><i class="fa fa-paste"></i> 编辑</button>
+                <button id="btnDel" type="button" class="btn btn-danger " onclick="delData()">
+                    <i class="fa fa-dedent"></i>&nbsp;&nbsp;<span class="bold">删除</span>
+                </button>
+            </div>*@
+
+            <div class="form-group">
+                <div class="input-group">
+                    <input id="txtSearchKey" type="text" class="input form-control" placeholder="搜索关键字" />
+                    <span class="input-group-btn">
+                        <button id="btnSearch" class="btn btn btn-primary" type="button"> <i class="fa fa-search"></i> 搜索</button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="jqGrid_wrapper">
+                <table id="table_list"></table>
+                <div id="pager_list"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+    {
+
+    <environment names="Development">
+        <script src="~/js/plugins/jqgrid/jquery.jqGrid.js"></script>
+        <script src="~/js/plugins/jqgrid/i18n/grid.locale-cn.js"></script>
+        <script src="~/js/jqgrid-list.js"></script>
+        <script src="~/js/json2.js"></script>
+        <script src="~/js/base.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/grid.min.js" asp-append-version="true"></script>
+    </environment>
+    <script>
+        @*function addModel() {
+            $("#btnAdd").button("loading");
+            window.location.href = "@Url.Action("Add")";
+        }*@
+
+        @*function editModel() {//编辑
+            var row = DUWENINKGrid.GetData();
+            if (row != null) {
+                $("#btnEdit").button("loading");
+                window.location.href = "@Url.Action("Edit")/" + row.id;
+            } else {
+                alert("请选择要编辑的数据");
+            }
+        }*@
+
+        @*function delData() {//删除
+            XPage.DelData("@Url.Action("Delete")");
+        }*@
+
+        function searchData() {//搜索
+            var json = {
+                keywords: $("#txtSearchKey").val()
+            };
+            XPage.Search(json);
+        }
+
+        //Id = item.Id,
+        //    DriverLicenseType = item.DriverLicenseType,
+        //    SourceAreaId = areas == null ? string.Empty : (areas.FirstOrDefault(c => c.id == item.SourceAreaId) == null ? string.Empty : areas.FirstOrDefault(c => c.id == item.SourceAreaId).name),
+        //    SourceTotalPrice = item.SourceTotalPrice,
+        //    //-------------------------------------------
+        //    GoalAreaId = areas == null ? string.Empty : (areas.FirstOrDefault(c => c.id == item.GoalAreaId) == null ? string.Empty : areas.FirstOrDefault(c => c.id == item.GoalAreaId).name),
+        //    GoalAddress = item.GoalAddress,
+        //    GoalTotalPrice = item.GoalTotalPrice,
+        //    Sex = (SexType)item.Sex,
+        //    PhoneNumber= item.PhoneNumber,
+        //    AcquisitionTime= item.AcquisitionTime,
+        //    WeiXinId = item.WeiXinId
+
+        $(document).ready(function() {
+            var config = {
+                title: '菜单列表',
+                url: '@Url.Action("GetListWithPager")',
+                colNames: ['主键','剩余驾分','性别','驾照类型','归属地','归属地价', '取得地','详细地址','取得地价','手机号码','驾龄'],
+                colModel: [
+                    { name: 'id', index: 'id', width: 60, key: true, hidden: true },
+                    { name: 'scoreLeft', index: 'scoreLeft', width: 60, key: true },
+                    {
+                        name: 'sex', index: 'sex', width: 60, formatter: function (cellValue, options, rowObject) {
+                            return rowObject.typeName;
+                        }
+                    },
+                    { name: 'driverLicenseType', index: 'driverLicenseType', width: 60 },
+                    { name: 'sourceAreaId', index: 'sourceAreaId', width: 60 },
+                    { name: 'sourceTotalPrice', index: 'sourceTotalPrice', width: 60 },
+                    { name: 'goalAreaId', index: 'goalAreaId', width: 60 },
+                    { name: 'goalAddress', index: 'goalAddress', width: 60 },
+                    { name: 'goalTotalPrice', index: 'goalTotalPrice', width: 60 },
+                    { name: 'phoneNumber', index: 'phoneNumber', width: 60 },
+                    { name: 'driveYear', index: 'driveYear', width: 60 }
+                ]
+            };
+            DUWENINKGrid.Load(config);
+            $("#btnSearch").bind("click", searchData);
+        });
+    </script>
+}

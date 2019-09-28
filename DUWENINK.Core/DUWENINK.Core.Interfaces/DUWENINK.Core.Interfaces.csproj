@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Version>2.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DUWENINK.Core.Infrastructure\DUWENINK.Core.Infrastructure.csproj" />
+    <ProjectReference Include="..\DUWENINK.Core.Models\DUWENINK.Core.Models.csproj" />
+  </ItemGroup>
+
+</Project>

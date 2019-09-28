@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "DUWENINK.Core.Weixin.SDK/1.0.0": {
+        "runtime": {
+          "DUWENINK.Core.Weixin.SDK.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DUWENINK.Core.Weixin.SDK/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

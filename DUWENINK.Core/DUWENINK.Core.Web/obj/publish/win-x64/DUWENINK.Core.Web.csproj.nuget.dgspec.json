@@ -1,0 +1,594 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Web\\DUWENINK.Core.Web.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Data\\DUWENINK.Core.Data.csproj": {
+      "version": "2.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Data\\DUWENINK.Core.Data.csproj",
+        "projectName": "DUWENINK.Core.Data",
+        "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Data\\DUWENINK.Core.Data.csproj",
+        "packagesPath": "C:\\Users\\DUWENINK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DUWENINK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Infrastructure\\DUWENINK.Core.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Infrastructure\\DUWENINK.Core.Infrastructure.csproj"
+              },
+              "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Models\\DUWENINK.Core.Models.csproj": {
+                "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Models\\DUWENINK.Core.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Infrastructure\\DUWENINK.Core.Infrastructure.csproj": {
+      "version": "2.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Infrastructure\\DUWENINK.Core.Infrastructure.csproj",
+        "projectName": "DUWENINK.Core.Infrastructure",
+        "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Infrastructure\\DUWENINK.Core.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\DUWENINK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DUWENINK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "System.ComponentModel": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Linq.Expressions": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Reflection.TypeExtensions": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            },
+            "System.Security.Cryptography.Algorithms": {
+              "target": "Package",
+              "version": "[4.3.1, )"
+            },
+            "System.Xml.XmlSerializer": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.8, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Interfaces\\DUWENINK.Core.Interfaces.csproj": {
+      "version": "2.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Interfaces\\DUWENINK.Core.Interfaces.csproj",
+        "projectName": "DUWENINK.Core.Interfaces",
+        "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Interfaces\\DUWENINK.Core.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\DUWENINK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DUWENINK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Infrastructure\\DUWENINK.Core.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Infrastructure\\DUWENINK.Core.Infrastructure.csproj"
+              },
+              "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Models\\DUWENINK.Core.Models.csproj": {
+                "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Models\\DUWENINK.Core.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Models\\DUWENINK.Core.Models.csproj": {
+      "version": "2.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Models\\DUWENINK.Core.Models.csproj",
+        "projectName": "DUWENINK.Core.Models",
+        "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Models\\DUWENINK.Core.Models.csproj",
+        "packagesPath": "C:\\Users\\DUWENINK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DUWENINK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Infrastructure\\DUWENINK.Core.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Infrastructure\\DUWENINK.Core.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Services\\DUWENINK.Core.Services.csproj": {
+      "version": "2.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Services\\DUWENINK.Core.Services.csproj",
+        "projectName": "DUWENINK.Core.Services",
+        "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Services\\DUWENINK.Core.Services.csproj",
+        "packagesPath": "C:\\Users\\DUWENINK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DUWENINK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Data\\DUWENINK.Core.Data.csproj": {
+                "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Data\\DUWENINK.Core.Data.csproj"
+              },
+              "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Infrastructure\\DUWENINK.Core.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Infrastructure\\DUWENINK.Core.Infrastructure.csproj"
+              },
+              "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Interfaces\\DUWENINK.Core.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Interfaces\\DUWENINK.Core.Interfaces.csproj"
+              },
+              "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Models\\DUWENINK.Core.Models.csproj": {
+                "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Models\\DUWENINK.Core.Models.csproj"
+              },
+              "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Weixin.SDK\\DUWENINK.Core.Weixin.SDK.csproj": {
+                "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Weixin.SDK\\DUWENINK.Core.Weixin.SDK.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.6.9, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Web\\DUWENINK.Core.Web.csproj": {
+      "version": "2.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Web\\DUWENINK.Core.Web.csproj",
+        "projectName": "DUWENINK.Core.Web",
+        "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Web\\DUWENINK.Core.Web.csproj",
+        "packagesPath": "C:\\Users\\DUWENINK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Web\\obj\\publish\\win-x64\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DUWENINK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Infrastructure\\DUWENINK.Core.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Infrastructure\\DUWENINK.Core.Infrastructure.csproj"
+              },
+              "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Interfaces\\DUWENINK.Core.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Interfaces\\DUWENINK.Core.Interfaces.csproj"
+              },
+              "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Models\\DUWENINK.Core.Models.csproj": {
+                "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Models\\DUWENINK.Core.Models.csproj"
+              },
+              "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Services\\DUWENINK.Core.Services.csproj": {
+                "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Services\\DUWENINK.Core.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AspNetCoreRateLimit": {
+              "target": "Package",
+              "version": "[3.0.5, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.7.2, )"
+            },
+            "Hangfire.Console": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "Hangfire.MySql.Core": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.All": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.8, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Weixin.SDK\\DUWENINK.Core.Weixin.SDK.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Weixin.SDK\\DUWENINK.Core.Weixin.SDK.csproj",
+        "projectName": "DUWENINK.Core.Weixin.SDK",
+        "projectPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Weixin.SDK\\DUWENINK.Core.Weixin.SDK.csproj",
+        "packagesPath": "C:\\Users\\DUWENINK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DUWENINK\\source\\repos\\DUWENINK\\DUWENINK_WEB\\DUWENINK.Core\\DUWENINK.Core.Weixin.SDK\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DUWENINK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

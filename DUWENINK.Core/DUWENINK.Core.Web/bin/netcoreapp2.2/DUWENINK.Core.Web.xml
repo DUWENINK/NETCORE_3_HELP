@@ -1,0 +1,1185 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DUWENINK.Core.Web</name>
+    </assembly>
+    <members>
+        <member name="T:DUWENINK.Core.Web.Controllers.AreaController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.AreaController.#ctor(DUWENINK.Core.Interfaces.IAreaService)">
+            <summary>
+            
+            </summary>
+            <param name="areaService"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.AreaController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.AreaController.Add(System.String)">
+            <summary>
+            添加
+            </summary>
+            <param name="id">父页面ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.AreaController.Add(DUWENINK.Core.Models.AreaDto)">
+            <summary>
+            添加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.AreaController.Edit(System.String)">
+            <summary>
+            编辑
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.AreaController.Edit(DUWENINK.Core.Models.AreaDto)">
+            <summary>
+            编辑
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.AreaController.Delete(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">主键ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.AreaController.GetTrees(DUWENINK.Core.Models.Filters.TreeFilter)">
+            <summary>
+            获取树
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.AreaController.AreaOfferPriceList(DUWENINK.Core.Models.Filters.AreaOfferFilter)">
+            <summary>
+            获取票价值
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.AreaController.Exists(System.String,System.String)">
+            <summary>
+            判断是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.AreaController.AddAreaOffer(System.String)">
+            <summary>
+            添加表单
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.AreaController.AddAreaOffer(DUWENINK.Core.Models.System.AreaOfferDto)">
+            <summary>
+            
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.DepartmentController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DepartmentController.#ctor(DUWENINK.Core.Interfaces.IDepartmentService)">
+            <summary>
+            
+            </summary>
+            <param name="departmentService"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DepartmentController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DepartmentController.Add(System.String)">
+            <summary>
+            添加
+            </summary>
+            <param name="id">父页面ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DepartmentController.Add(DUWENINK.Core.Models.System.DepartmentDto)">
+            <summary>
+            添加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DepartmentController.Edit(System.String)">
+            <summary>
+            编辑
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DepartmentController.Edit(DUWENINK.Core.Models.System.DepartmentDto)">
+            <summary>
+            编辑
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DepartmentController.Delete(System.String)">
+            <summary>
+            删除
+            </summary>
+            <param name="id">主键ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DepartmentController.GetTrees(DUWENINK.Core.Models.Filters.TreeFilter)">
+            <summary>
+            获取树
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DepartmentController.GetDepartments(System.String)">
+            <summary>
+            获取树
+            </summary>
+            <param name="q">查询关键字</param>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.DriverLicenseOfferController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DriverLicenseOfferController.#ctor(DUWENINK.Core.Interfaces.IDriverLicenseOfferService,Microsoft.Extensions.Caching.Memory.IMemoryCache,DUWENINK.Core.Interfaces.IWeChatService)">
+            <summary>
+            
+            </summary>
+            <param name="driverLicenseOfferService"></param>
+            <param name="memoryCache"></param>
+            <param name="weChatService"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DriverLicenseOfferController.ReportServiceUser(DUWENINK.Core.Models.Business.DriverLicenseOfferDto)">
+            <summary>
+            上报数据
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DriverLicenseOfferController.getUserInfo(DUWENINK.Core.Models.Business.WeChatCodeDto)">
+            <summary>
+            
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DriverLicenseOfferController.signture">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DriverLicenseOfferController.GetOffer(DUWENINK.Core.Models.Business.DriverLicenseOfferDto)">
+            <summary>
+            
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DriverLicenseOfferController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.DriverLicenseOfferController.GetListWithPager(DUWENINK.Core.Models.Filters.DriverLicenseOfferFilters)">
+            <summary>
+            搜索页面
+            </summary>
+            <param name="filters">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.FileCollectionController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.FileCollectionController.#ctor(DUWENINK.Core.Interfaces.IFileCollectionService)">
+            <summary>
+            
+            </summary>
+            <param name="fileCollectionService"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.FileCollectionController.GetFileList(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="cpuId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.HomeController">
+            <summary>
+            首页
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.HomeController.#ctor(DUWENINK.Core.Interfaces.IUserService,DUWENINK.Core.Interfaces.IMenuService,DUWENINK.Core.Interfaces.IMessageService,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="userSvr"></param>
+            <param name="menuService"></param>
+            <param name="messageService"></param>
+            <param name="hostEnvironment"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.HomeController.Index">
+            <summary>
+            首页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.HomeController.Welcome">
+            <summary>
+            欢迎页面
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.HomeController.Login">
+            <summary>
+            登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.HomeController.Login(DUWENINK.Core.Models.LoginDto)">
+            <summary>
+            登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.HomeController.Logout">
+            <summary>
+            退出登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.HomeController.Error">
+            <summary>
+            错误页面
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.JobController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.JobController.#ctor(DUWENINK.Core.Interfaces.IJobService)">
+            <summary>
+            
+            </summary>
+            <param name="jobService"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.JobController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.JobController.JobList(DUWENINK.Core.Models.Filters.JobFilters)">
+            <summary>
+            
+            </summary>
+            <param name="filters"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.LogController">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.LogController.#ctor(DUWENINK.Core.Interfaces.ILogService,DUWENINK.Core.Interfaces.ISiteViewService)">
+            <summary>
+            
+            </summary>
+            <param name="logService"></param>
+            <param name="siteViewService"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.LogController.Logins">
+            <summary>
+            登录日志
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.LogController.Visits">
+            <summary>
+            访问记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.LogController.LoginsList(DUWENINK.Core.Models.Filters.LogFilters)">
+            <summary>
+            登录日志
+            </summary>
+            <param name="filters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.LogController.VisitsList(DUWENINK.Core.Models.Filters.LogFilters)">
+            <summary>
+            访问记录
+            </summary>
+            <param name="filters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.LogController.Charts">
+            <summary>
+            统计图表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.LogController.ChartsDatas">
+            <summary>
+            获取统计数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.MenuController">
+            <summary>
+            菜单
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MenuController.#ctor(DUWENINK.Core.Interfaces.IMenuService)">
+            <summary>
+            
+            </summary>
+            <param name="menuSvc"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MenuController.Index">
+            <summary>
+            首页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MenuController.Add">
+            <summary>
+            添加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MenuController.Edit(System.String)">
+            <summary>
+            编辑
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MenuController.FontAwesome">
+            <summary>
+            图标选择
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MenuController.Add(DUWENINK.Core.Models.System.MenuDto)">
+            <summary>
+            添加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MenuController.Edit(DUWENINK.Core.Models.System.MenuDto)">
+            <summary>
+            编辑
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MenuController.Delete(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            删除
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MenuController.GetListWithPager(DUWENINK.Core.Models.Filters.MenuFilters)">
+            <summary>
+            搜索页面
+            </summary>
+            <param name="filters">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MenuController.GetListWithKeywords(DUWENINK.Core.Models.Filters.MenuFilters)">
+            <summary>
+            搜索页面
+            </summary>
+            <param name="filters">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.MessageCenterController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MessageCenterController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,DUWENINK.Core.Interfaces.IVaeService)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+            <param name="vaeService"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MessageCenterController.SendPrivateMessage(DUWENINK.Core.Models.Business.PrivateMsgDto)">
+            <summary>
+            
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MessageCenterController.PushVaeNews">
+            <summary>
+            推送许嵩消息,接口随时可能废弃
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MessageCenterController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.MessageController">
+            <summary>
+            站内信
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MessageController.#ctor(DUWENINK.Core.Interfaces.IMessageService)">
+            <summary>
+            
+            </summary>
+            <param name="messageService"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MessageController.Index">
+            <summary>
+            首页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MessageController.Add">
+            <summary>
+            发送站内信
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MessageController.Add(DUWENINK.Core.Models.MessageDto)">
+            <summary>
+            发送站内信
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MessageController.Detail(System.String)">
+            <summary>
+            站内信详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MessageController.Read(System.String)">
+            <summary>
+            阅读站内信
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MessageController.Delete(System.Collections.Generic.IList{System.String})">
+            <summary>
+            删除
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.MessageController.GetListWithPager(DUWENINK.Core.Models.Filters.BaseFilter)">
+            <summary>
+            搜索页面
+            </summary>
+            <param name="filters">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.PagesController">
+            <summary>
+            首页
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.PagesController.Buttons">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.PagesController.FontAwesome">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.PagesController.Form">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.PagesController.FormAdvance">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.PagesController.Tables">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.PagesController.Tabs">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.ProjectController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.ProjectController.#ctor(DUWENINK.Core.Interfaces.IProjectService,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="projectService"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.ProjectController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.ProjectController.ServiceAdd">
+            <summary>
+            客服添加视角 （具有客服角色的用户可以进行添加）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.ProjectController.ServiceAdd(DUWENINK.Core.Models.Business.ProjectAddDto)">
+            <summary>
+            添加（具有客服角色的用户可以进行添加）客服添加项目的时候项目状态默认为开始状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.ProjectController.ServiceEdit(System.String)">
+            <summary>
+            客服对表单进行修改（当项目状态为开始状态的时候，客服可以对项目进行修改，如果项目状态为其他状态，如果需要修改需要联系管理员）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.ProjectController.Delete(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            删除项目
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.ProjectController.ProjectList(DUWENINK.Core.Models.Filters.ProjectFilters)">
+            <summary>
+            登录日志
+            </summary>
+            <param name="filters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.ProjectController.DeveloperUpdate(System.String)">
+            <summary>
+            开发者对表单进行二次修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.RoleController">
+            <summary>
+            用户角色
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.RoleController.#ctor(DUWENINK.Core.Interfaces.IRoleService,DUWENINK.Core.Interfaces.IMenuService)">
+            <summary>
+            
+            </summary>
+            <param name="roleSvc"></param>
+            <param name="menuService"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.RoleController.Index">
+            <summary>
+            首页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.RoleController.Add">
+            <summary>
+            添加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.RoleController.Edit(System.String)">
+            <summary>
+            编辑
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.RoleController.Authen">
+            <summary>
+            角色授权
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.RoleController.AuthenMenuDatas">
+            <summary>
+            获取菜单树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.RoleController.AuthenRoleDatas">
+            <summary>
+            获取角色树
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.RoleController.AuthenRoleMenus(System.String)">
+            <summary>
+            获取角色下的菜单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.RoleController.SetRoleMenus(System.Collections.Generic.List{DUWENINK.Core.Models.RoleMenuDto})">
+            <summary>
+            设置角色的权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.RoleController.ClearRoleMenus(System.String)">
+            <summary>
+            清空该角色下的所有权限
+            </summary>
+            <param name="id">角色ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.RoleController.Add(DUWENINK.Core.Models.System.RoleDto)">
+            <summary>
+            添加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.RoleController.Edit(DUWENINK.Core.Models.System.RoleDto)">
+            <summary>
+            编辑
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.RoleController.Delete(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            删除
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.RoleController.GetListWithPager(DUWENINK.Core.Models.Filters.RoleFilters)">
+            <summary>
+            搜索页面
+            </summary>
+            <param name="filters">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.SmtpController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.SmtpController.#ctor(DUWENINK.Core.Interfaces.ISmtpService)">
+            <summary>
+            
+            </summary>
+            <param name="smtpService"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.SmtpController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.SmtpController.Add">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.SmtpController.Add(DUWENINK.Core.Models.Business.SmtpDto)">
+            <summary>
+            添加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.SmtpController.SmtpList(DUWENINK.Core.Models.Filters.SmtpFilters)">
+            <summary>
+            登录日志
+            </summary>
+            <param name="filters"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.STSController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.STSController.#ctor(DUWENINK.Core.Interfaces.ISTSService)">
+            <summary>
+            
+            </summary>
+            <param name="sTSService"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.STSController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.STSController.STSList(DUWENINK.Core.Models.Filters.STSFilters)">
+            <summary>
+            登录日志
+            </summary>
+            <param name="filters"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.SystemController">
+            <summary>
+            系统管理
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.SystemController.#ctor(DUWENINK.Core.Interfaces.IDatabaseInitService,DUWENINK.Core.Interfaces.IMenuService)">
+            <summary>
+            
+            </summary>
+            <param name="databaseInitService"></param>
+            <param name="menuService"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.SystemController.Index">
+            <summary>
+            系统管理首页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.SystemController.ReloadPathCode">
+            <summary>
+            重置路径码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.SystemController.ReInitAreas">
+            <summary>
+            初始化省市区数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.SystemController.ReInitMenues">
+            <summary>
+            重置系统所有菜单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.UserController">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.#ctor(DUWENINK.Core.Interfaces.IUserService,DUWENINK.Core.Interfaces.IRoleService,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="userSvc"></param>
+            <param name="roleSvc"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.Index">
+            <summary>
+            首页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.Authen(System.String)">
+            <summary>
+            用户角色授权
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.Add">
+            <summary>
+            添加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.Edit(System.String)">
+            <summary>
+            编辑
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.Add(DUWENINK.Core.Models.UserAddDto)">
+            <summary>
+            添加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.Edit(DUWENINK.Core.Models.System.UserUpdateDto)">
+            <summary>
+            编辑
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.Delete(System.Collections.Generic.List{System.String})">
+            <summary>
+            删除
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.GetListWithPager(DUWENINK.Core.Models.Filters.UserFilters)">
+            <summary>
+            搜索页面
+            </summary>
+            <param name="filters">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.GetMyRoles(DUWENINK.Core.Models.Filters.RoleFilters)">
+            <summary>
+            我的角色
+            </summary>
+            <param name="filters">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.GetNotMyRoles(DUWENINK.Core.Models.Filters.RoleFilters)">
+            <summary>
+            我尚未拥有的角色
+            </summary>
+            <param name="filters">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.GiveRight(System.String,System.String)">
+            <summary>
+            用户角色授权
+            </summary>
+            <param name="id">角色ID</param>
+            <param name="userId">用户Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.CancelRight(System.String,System.String)">
+            <summary>
+            用户角色取消
+            </summary>
+            <param name="id">角色ID</param>
+            <param name="userId">用户Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.VerifyLoginName(System.String)">
+            <summary>
+            验证登录名是否重复
+            </summary>
+            <param name="loginName">登录名</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.GetUsers(System.String)">
+            <summary>
+            获取树
+            </summary>
+            <param name="q">查询关键字</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.GetListWithKeywords(DUWENINK.Core.Models.Filters.UserFilters)">
+            <summary>
+            搜索页面
+            </summary>
+            <param name="filters">查询参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.UserController.ReportServiceUser(DUWENINK.Core.Models.System.UserDto)">
+            <summary>
+            
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Controllers.WeChatController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Controllers.WeChatController.Get(System.String,System.String,System.String,System.String)">
+            <summary>
+            微信后台验证地址（使用Get），微信后台的“接口配置信息”的Url填写如：http://weixin.senparc.com/weixin
+            </summary>
+        </member>
+        <member name="T:DUWENINK.Core.Web.HangfireAuthorizationFilter">
+            <summary>
+            Hangfire认证
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.HangfireAuthorizationFilter.Authorize(Hangfire.Dashboard.DashboardContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Filters.IgnoreRightFilter">
+            <summary>
+            忽略权限验证，不需要做权限验证的，就加上这个Attribute(Action和Controller都可以加)
+            </summary>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Filters.JsonFilter">
+            <summary>
+            Json配置
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Filters.JsonFilter.OnResultExecuting(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Filters.RightFilter">
+            <summary>
+            权限验证
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Filters.RightFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            OnActionExecuting
+            </summary>
+            <param name="filterContext"></param>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Filters.VisitMiddleware">
+            <summary>
+            访问管道
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Filters.VisitMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Filters.VisitMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.MenuHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.MenuHelper.GetMenues">
+            <summary>
+            获取所有的菜单配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Models.JsonResultModel`1">
+            <summary>
+            通用Json结果对象
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Models.JsonResultModel`1.#ctor">
+            <summary>
+            ctor
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Models.JsonResultModel`1.#ctor(System.Boolean,System.String,`0)">
+            <summary>
+            ctor with params
+            </summary>
+            <param name="flagResult">操作结果</param>
+            <param name="message">消息</param>
+            <param name="returnData">返回数据</param>
+        </member>
+        <member name="P:DUWENINK.Core.Web.Models.JsonResultModel`1.flag">
+            <summary>
+            是否操作成功
+            </summary>
+        </member>
+        <member name="P:DUWENINK.Core.Web.Models.JsonResultModel`1.data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+        <member name="P:DUWENINK.Core.Web.Models.JsonResultModel`1.msg">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Models.StaticFileModel">
+            <summary>
+            静态资源Model
+            </summary>
+        </member>
+        <member name="P:DUWENINK.Core.Web.Models.StaticFileModel.VirtualUrl">
+            <summary>
+            VirtualUrl
+            </summary>
+        </member>
+        <member name="P:DUWENINK.Core.Web.Models.StaticFileModel.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:DUWENINK.Core.Web.Models.StaticFileModel.Version">
+            <summary>
+            版本号
+            </summary>
+        </member>
+        <member name="P:DUWENINK.Core.Web.Models.StaticFileModel.Srcs">
+            <summary>
+            资源URLS
+            </summary>
+        </member>
+        <member name="P:DUWENINK.Core.Web.Models.StaticFileModel.Desc">
+            <summary>
+            说明
+            </summary>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Program.BuildWebHost(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DUWENINK.Core.Web.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:DUWENINK.Core.Web.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:DUWENINK.Core.Web.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:DUWENINK.Core.Web.IdentityExtention">
+            <summary>
+            IIdentity扩展
+            </summary>
+        </member>
+        <member name="M:DUWENINK.Core.Web.IdentityExtention.GetLoginUserId(System.Security.Principal.IIdentity)">
+            <summary>
+            获取登录的用户ID
+            </summary>
+            <param name="identity">IIdentity</param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.IdentityExtention.GetLoginUserQQ(System.Security.Principal.IIdentity)">
+            <summary>
+            
+            </summary>
+            <param name="identity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.IdentityExtention.GetLoginUserRoles(System.Security.Principal.IIdentity)">
+            <summary>
+            
+            </summary>
+            <param name="identity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.IdentityExtention.HaveServiceRight(System.Security.Principal.IIdentity)">
+            <summary>
+            是否具备客服权限(权限最小只能看到自己的)只有不具备管理员角色的客服才能被称为客服
+            </summary>
+            <param name="identity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DUWENINK.Core.Web.IdentityExtention.HaveDeveloperRight(System.Security.Principal.IIdentity)">
+            <summary>
+            是否具备开发者权限只有不具备管理员角色的客服才能被称为开发者
+            </summary>
+            <param name="identity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NullToEmptyStringResolver">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:NullToEmptyStringResolver.CreateProperties(System.Type,Newtonsoft.Json.MemberSerialization)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="memberSerialization"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NullToEmptyStringValueProvider">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:NullToEmptyStringValueProvider.#ctor(System.Reflection.PropertyInfo)">
+            <summary>
+            
+            </summary>
+            <param name="memberInfo"></param>
+        </member>
+        <member name="M:NullToEmptyStringValueProvider.GetValue(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="target"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NullToEmptyStringValueProvider.SetValue(System.Object,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="target"></param>
+            <param name="value"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Git_DUWENINK\Car_H5_WeiXin\CarWeb\DUWENINK.Core.Web\bin\Debug\netcoreapp2.2\publish\</_PublishTargetUrl>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGA9lWrhSL0KuwCUCojt2tQAAAAACAAAAAAAQZgAAAAEAACAAAADUHuJYApS4kHYUq9KMMagvAtC9vZlDRgwIm2Uz9gCI1wAAAAAOgAAAAAIAACAAAABxRNXVlfVRjospokf/VVIUIBBIlUgmKNsEx+DfWxUtsyAAAABJjQU7bFjggl1gux7qWS372WWM463eq7Mgp/j50oxd7UAAAAB2eDKCPEPWO4BLge6e+h6JpeUfKDmhmGPnddig65dlEO2y2TQkKf9ZXeknaUoDRLcG2MrvrOUGpgyTJyf2zkLw</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Connection_Job_MySql">
+      <Value>Datasource=ali.duwenink.cn%3bDatabase=carjob%3buid=carjob%3bpwd=carjob%3bCharacter Set=utf8%3bAllow User Variables=True</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="Connection_MySql">
+      <Value>Datasource=ali.duwenink.cn%3bDatabase=car%3buid=car%3bpwd=car%3bCharacter Set=utf8%3bAllow User Variables=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,192 @@
+﻿
+@{
+    ViewBag.Title = "字典管理";
+    Layout = "~/Views/Shared/_Layout_Content.cshtml";
+}
+
+<div class="wrapper wrapper-content">
+    <div class="ibox float-e-margins">
+        <div class="ibox-title">
+            <h5>字典管理</h5>
+            <div class="ibox-tools">
+                <a class="collapse-link">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+        <div class="ibox-content">
+            <div class="row">
+                <div class="col-sm-12">
+                    <button id="btnAdd" type="button" class="btn btn-primary "><i class="fa fa-plus"></i>&nbsp;添加</button>
+                    <button id="btnEdit" type="button" class="btn btn-info "><i class="fa fa-pencil"></i> 编辑</button>
+                    <button id="btnDel" type="button" class="btn btn-danger ">
+                        <i class="fa fa-remove"></i>&nbsp;&nbsp;<span class="bold">删除</span>
+                    </button>
+                    @*<button id="btnCancel" type="button" class="btn btn-warning "><i class="fa fa-undo"></i> 取消选中状态</button>
+                    <button type="button" class="btn btn-warning" id="btnReloadArea"><i class="fa fa-undo"></i> 重置省市区数据</button>*@
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            字典组
+                        </div>
+                        <div class="panel-body">
+                            <div >
+                                <ul id="itemTree" class="ztree">
+                                    <li>暂无数据</li>
+                                </ul>
+                                <input type="hidden" id="txtParentId" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            字典项
+                        </div>
+                        <div class="panel-body">
+                            <button id="btnAddItem" onclick="addModel()" type="button" class="btn btn-primary "><i class="fa fa-plus"></i>&nbsp;添加</button>
+
+                            <div class="jqGrid_wrapper">
+                                <table id="table_list"></table>
+                                <div id="pager_list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@section styles    {
+    <link href="~/css/plugins/ztree/metroStyle.css" rel="stylesheet" />
+    <link href="~/css/plugins/jqgrid/ui.jqgrid.css" rel="stylesheet" />
+}
+@section scripts
+    {
+
+
+
+    <environment names="Development">
+        <script src="~/js/base.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/base.min.js" asp-append-version="true"></script>
+    </environment>
+    <script src="~/js/plugins/jqgrid/jquery.jqGrid.js"></script>
+    <script src="~/js/plugins/jqgrid/i18n/grid.locale-cn.js"></script>
+    <script src="~/js/jqgrid-list.js"></script>
+    <script src="~/js/plugins/ztree/jquery.ztree.all.js"></script>
+    <script src="~/js/page/DUWENINK.ztree.js"></script>
+
+
+
+    <script type="text/javascript">
+        var AreaId = '';
+        var AreaName = '';
+        var config = {
+            id: 'itemTree',
+            loadUrl: '@Url.Action("GetTrees")',
+            addUrl: '@Url.Action("Add")',
+            editUrl: '@Url.Action("Edit")',
+            deleteUrl: '@Url.Action("Delete")',
+            height: '360px',
+            title: '代码组',
+            callback: function (areaId, areaName) {
+                //  loadList(id, name);
+                searchData(areaId, areaName);
+
+            }
+        };
+
+        var tree = new DUWENINKTree(config);
+        tree.load();
+        $("#btnCancel").click(function() {
+            var zTree = $.fn.zTree.getZTreeObj(config.id);
+            zTree.cancelSelectedNode();
+            $("#txtParentId").val("");
+        });
+        @*$(function() {
+            $("#btnReloadArea").click(function() {
+                XPage.DoPost(this,
+                    "@Url.Action("ReInitAreas", "System")",
+                    null,
+                    function() {
+                        tree.load();
+                    },
+                    null);
+            });
+        });*@
+
+        function searchData(areaId, areaName) { //搜索
+            AreaId = areaId;
+            AreaName = areaName;
+            var json = {
+                areaId: areaId
+            };
+            XPage.Search(json);
+        }
+
+        $(document).ready(function() {
+            @*var config = {
+                title: '价格信息',
+                url: '@Url.Action("AreaOfferPriceList")',
+                colNames: [
+                    '主键','地区名称', 'A1', 'A2', 'A3', 'B1', 'B2', 'C1', 'C2', 'C3', 'C4', 'D', 'E', 'F', 'M', 'N', 'P', '创建时间'
+                ],
+                colModel: [
+                    { name: 'id', index: 'id', width: 30, key: true, hidden: true },
+                    { name: 'areaName', index: 'areaName', width: 30 },
+                    { name: 'a1OfferPrice', index: 'a1OfferPrice', width: 30 },
+                    { name: 'a2OfferPrice', index: 'a2OfferPrice', width: 30 },
+                    { name: 'a3OfferPrice', index: 'a3OfferPrice', width: 30 },
+                    { name: 'b1OfferPrice', index: 'b1OfferPrice', width: 30 },
+                    { name: 'b2OfferPrice', index: 'b2OfferPrice', width: 30 },
+                    { name: 'c1OfferPrice', index: 'c1OfferPrice', width: 30 },
+                    { name: 'c2OfferPrice', index: 'c2OfferPrice', width: 30 },
+                    { name: 'c3OfferPrice', index: 'c3OfferPrice', width: 30 },
+                    { name: 'c4OfferPrice', index: 'c4OfferPrice', width: 30 },
+                    { name: 'dOfferPrice', index: 'dOfferPrice', width: 30 },
+                    { name: 'eOfferPrice', index: 'eOfferPrice', width: 30 },
+                    { name: 'fOfferPrice', index: 'fOfferPrice', width: 30 },
+                    { name: 'mOfferPrice', index: 'mOfferPrice', width: 30 },
+                    { name: 'nOfferPrice', index: 'nOfferPrice', width: 30 },
+                    { name: 'pOfferPrice', index: 'pOfferPrice', width: 30 },
+                    {
+                        name: 'createDateTime',
+                        index: 'createDateTime',
+                        width: 60,
+                        formatter: function(cellValue, options, rowObject) {
+                            return cellValue;
+                        }
+                    }
+                ]
+            };
+            DUWENINKGrid.Load(config);*@
+            // $("#btnSearch").bind("click", searchData);
+        });
+
+        function addModel() {
+            var areaId = AreaId;
+            if (areaId === '') {
+                //alert(areaId);
+                return;
+            }
+            $("#btnAddItem").button("loading");
+            window.location.href = "@Url.Action("AddAreaOffer")/" + areaId;
+        }
+
+        $(document).ready(function() {
+
+            // $("#btnSearch").bind("click", searchData);
+        });
+    </script>
+}

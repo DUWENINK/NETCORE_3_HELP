@@ -1,0 +1,203 @@
+﻿@using DUWENINK.Core.Models.System
+@using Microsoft.AspNetCore.Mvc.Rendering
+@using  DUWENINK.Core.Infrastructure.Extentions
+@model DUWENINK.Core.Models.Business.ServiceEditDto
+
+@{
+    ViewBag.Title = "编辑项目";
+    Layout = "~/Views/Shared/_Layout_Content.cshtml";
+}
+<div class="wrapper wrapper-content">
+    <div class="ibox float-e-margins">
+        <div class="ibox-title">
+            <h5>添加项目</h5>
+            <div class="ibox-tools">
+                <a class="collapse-link">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+        <div class="ibox-content">
+
+
+
+            @using (Html.BeginForm("ServiceAdd", "Project", FormMethod.Post, new { @class = "form-horizontal" }))
+            {
+                <div class="form-group">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <i class="fa fa-warning"></i> 警告
+                        </div>
+                        <div class="panel-body">
+                            <p>只有项目状态为新建的时候才可以进行修改!当前项目状态:<b>@Html.DisplayFor(c => c.ProjectStatusText)</b></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.FromCustomQQ)：</label>
+                    <div class="col-sm-2">
+                        @Html.TextBoxFor(m => m.FromCustomQQ, new { @class = "form-control", placeholder = "客户QQ" })
+                        @Html.ValidationMessageFor(m => m.FromCustomQQ)
+                    </div>
+                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.FromCustomServiceQQ)：</label>
+                    <div class="col-sm-2">
+                        @Html.TextBoxFor(m => m.FromCustomServiceQQ, new { @class = "form-control", placeholder = "客服QQ" })
+                        @Html.ValidationMessageFor(m => m.FromCustomServiceQQ)
+                    </div>
+                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.FromQQGroup)：</label>
+                    <div class="col-sm-2">
+                        @Html.TextBoxFor(m => m.FromQQGroup, new { @class = "form-control", placeholder = "QQ群" })
+                        @Html.ValidationMessageFor(m => m.FromQQGroup)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.ProjectQQGroup)：</label>
+                    <div class="col-sm-2">
+                        @Html.TextBoxFor(m => m.ProjectQQGroup, new { @class = "form-control", placeholder = "三方群" })
+                        @Html.ValidationMessageFor(m => m.ProjectQQGroup)
+                    </div>
+
+                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.ChargePersonId)：</label>
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            @Html.TextBoxFor(m => m.ChargePersonName, new { @class = "form-control", placeholder = "负责人" })
+                            @Html.HiddenFor(m => m.ChargePersonId)
+                            @Html.ValidationMessageFor(m => m.ChargePersonId)
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right" role="menu"></ul>
+                            </div>
+                            <!-- /btn-group -->
+                        </div>
+                    </div>
+                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.SettleInterval)：</label>
+                    <div class="col-sm-2">
+                        @Html.DropDownListFor(m => m.SettleInterval, ViewBag.SettleInterval as SelectList, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group" id="data_1">
+                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.ProjectTitle)：</label>
+                    <div class="col-sm-2">
+
+                        @Html.TextBoxFor(m => m.ProjectTitle, new { @class = "form-control", placeholder = "项目标题" })
+                        @Html.ValidationMessageFor(m => m.ProjectTitle)
+
+                    </div>
+                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.ProjectType)：</label>
+                    <div class="col-sm-2">
+                        @Html.DropDownListFor(m => m.ProjectType, ViewBag.ProjectType as SelectList, new { @class = "form-control" })
+                    </div>
+                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.ProjectStartTime)：</label>
+                    <div class="col-sm-2">
+                        <div class="input-group date">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            @Html.TextBoxFor(m => m.ProjectStartTime, new { @class = "form-control", placeholder = "选择" })
+                            @Html.ValidationMessageFor(m => m.ProjectStartTime)
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.ProjectAgreementWorth)：</label>
+                    <div class="col-sm-2">
+                        <div class="input-group">
+                            <span class="input-group-addon">￥</span>
+                            @Html.TextBoxFor(m => m.ProjectAgreementWorth, new { @class = "form-control", placeholder = "约定金额" })
+                        </div>
+                        @Html.ValidationMessageFor(m => m.ProjectAgreementWorth)
+                    </div>
+                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.FromCustomWangWang)：</label>
+                    <div class="col-sm-2">
+                        @Html.TextBoxFor(m => m.FromCustomWangWang, new { @class = "form-control", placeholder = "客户旺旺" })
+                    </div>
+                    @Html.ValidationMessageFor(m => m.FromCustomWangWang)
+                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.OrderNumber)：</label>
+                    <div class="col-sm-2">
+                        @Html.TextBoxFor(m => m.OrderNumber, new { @class = "form-control", placeholder = "订单编号" })
+                        @Html.ValidationMessageFor(m => m.OrderNumber)
+                    </div>
+                </div>
+                <div class="form-group" id="data_2">
+                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.ProjectServiceEndTime)：</label>
+                    <div class="col-sm-2">
+                        <div class="input-group date">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            @Html.TextBoxFor(m => m.ProjectServiceEndTime, new { @class = "form-control", placeholder = "选择" })
+                            @Html.ValidationMessageFor(m => m.ProjectServiceEndTime)
+                        </div>
+                    </div>
+
+
+
+
+                    <label class="col-sm-1 control-label">@Html.LabelFor(m => m.Remarks)：</label>
+                    <div class="col-sm-2">
+                        @Html.TextAreaFor(m => m.Remarks, new { @class = "form-control", rows = 3, placeholder = "备注" })
+                        @Html.ValidationMessageFor(m => m.Remarks)
+                    </div>
+
+                </div>
+                <div class="form-group">
+
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-8">
+                        <button class="btn btn-info" type="submit">更新</button>
+                        <button class="btn btn-white" type="button" id="btnBack">返回</button>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section styles
+    {
+    <link href="~/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+}
+
+@section scripts{
+    <environment names="Development">
+        <script src="~/js/jquery.validate.js"></script>
+        <script src="~/js/jquery.validate.unobtrusive.js"></script>
+        <script src="~/js/plugins/suggest/bootstrap-suggest.js"></script>
+        <script src="~/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+        <script src="~/js/base.js"></script>
+        <script src="~/js/page/project.js"></script>
+        <script src="~/js/plugins/cropper/cropper.min.js"></script>
+        @*<script src="~/js/page/form-advanced.js"></script>*@
+
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/project.min.js" asp-append-version="true"></script>
+    </environment>
+
+    <script>
+        $("#btnBack").bind("click",
+            function(e) {
+                XPage.GoTo(e.target, "@Url.Action("Index")");
+            });
+        $(function() {
+            $("#data_1 .input-group.date").datepicker({
+                todayBtn: "linked",
+                keyboardNavigation: !1,
+                forceParse: !1,
+                calendarWeeks: !0,
+                autoclose: !0
+            });
+             $("#data_2 .input-group.date").datepicker({
+                todayBtn: "linked",
+                keyboardNavigation: !1,
+                forceParse: !1,
+                calendarWeeks: !0,
+                autoclose: !0
+            });
+        });
+
+    </script>
+}

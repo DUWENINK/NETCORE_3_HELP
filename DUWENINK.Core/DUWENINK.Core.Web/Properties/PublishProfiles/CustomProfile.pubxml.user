@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAaJlRTLdhckqyqtHy79tltAAAAAACAAAAAAAQZgAAAAEAACAAAADbvaMxg4vQqDzGD3pu32sKGD6p76BO3Jlj0bwn5YapSgAAAAAOgAAAAAIAACAAAABTc2ilogTSm3IIJv74G+2VYkdNloWRoOyz235HPV4mOyAAAADOEbhlUmQ/oj++A5RPWD3aKkXGpy3uHezM9y0rrbGWEEAAAACgGuwBUwhA0OUtiUNMzxOAYV7t2ckaTirj8VeMZVC2wCJUy2MVUUpRGw/2f2+nt4k4gzE3ZOjZRqeubnTSTBB9</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Connection_Job_MySql">
+      <Value>Datasource=www.shuyangtao.com%3bDatabase=taobaojob%3buid=taobaojob%3bpwd=taobaojob%3bCharacter Set=utf8%3bAllow User Variables=True</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="Connection_MySql">
+      <Value>Datasource=www.shuyangtao.com%3bDatabase=taobao%3buid=root%3bpwd=lczhjcysqs511%3bCharacter Set=utf8%3bAllow User Variables=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

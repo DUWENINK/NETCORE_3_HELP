@@ -1,0 +1,9 @@
+C:\Users\DUWENINK\source\repos\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Manager\bin\Debug\DUWENINK.Core.Manager.exe.config
+C:\Users\DUWENINK\source\repos\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Manager\bin\Debug\DUWENINK.Core.Manager.exe
+C:\Users\DUWENINK\source\repos\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Manager\bin\Debug\DUWENINK.Core.Manager.pdb
+C:\Users\DUWENINK\source\repos\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Manager\obj\Debug\DUWENINK.Core.Manager.csprojAssemblyReference.cache
+C:\Users\DUWENINK\source\repos\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Manager\obj\Debug\DUWENINK.Core.Manager.Properties.Resources.resources
+C:\Users\DUWENINK\source\repos\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Manager\obj\Debug\DUWENINK.Core.Manager.csproj.GenerateResource.cache
+C:\Users\DUWENINK\source\repos\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Manager\obj\Debug\DUWENINK.Core.Manager.csproj.CoreCompileInputs.cache
+C:\Users\DUWENINK\source\repos\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Manager\obj\Debug\DUWENINK.Core.Manager.exe
+C:\Users\DUWENINK\source\repos\DUWENINK\DUWENINK_WEB\DUWENINK.Core\DUWENINK.Core.Manager\obj\Debug\DUWENINK.Core.Manager.pdb
